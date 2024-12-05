@@ -1,0 +1,422 @@
+/*Adobe Fonts*/
+@import url("https://use.typekit.net/pwl8wwd.css");
+
+/*Valores*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"rubik", sans-serif;
+    scroll-behavior:smooth;
+}
+
+/*Body*/
+body {
+    background: #2f0138;
+}
+
+/* Section*/
+section{
+    position: relative;
+    padding: 80px;
+}
+
+/*Home*/
+.inicio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inicio header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    transition: 0.3s;
+}
+.inicio header.active {
+    background: #af0b99;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 10px; /* Ajusta según sea necesario */
+    margin: 0; /* Ajusta según sea necesario */
+    border: none; /* Ajusta según sea necesario */
+    width: 100%; /* Ajusta según sea necesario */
+    height: 13%; /* Ajusta según sea necesario */
+}
+.inicio header .logo {
+    color: #94d3f9;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.inicio header .logo {
+    color: #fff;
+}
+.inicio header .nav {
+    display: flex;
+    list-style: none;
+}
+.inicio header .nav li {
+    padding: 20px;
+}
+.inicio header.active .nav li a {
+    color: #fff;
+}
+.inicio header .nav li a {
+    color: #94d3f9;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+}
+.inicio header .nav li a:hover {
+    color: #1762da;
+}
+.inicio .contenido {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    line-height: 1.2;
+}
+.inicio .contenido .titulo {
+    position: relative;
+    max-width: 600px;
+}
+.inicio .contenido .titulo h2 {
+    color: #1762da;
+    font-size: 4em;
+    text-align: center;
+    align-content: center;
+}
+.inicio .contenido .titulo p {
+    margin-top: 20px;
+    color:#feffab;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.inicio .contenido .titulo2 h2 {
+    color: #1762da;
+    font-size: 4em;
+    text-align: center;
+    align-content: center;
+}
+.inicio .contenido .titulo2 p {
+    margin-top: 20px;
+    color:#feffab;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/*background animado*/
+
+body {
+    background: -moz-linear-gradient(45deg, #7502e1 0%, #d026f2 29%, #35023b 66%, #d979ff 100%);
+    background: -webkit-linear-gradient(45deg, #7502e1 0%,#d026f2 29%,#35023b 66%,#d979ff 100%);
+    background: linear-gradient(45deg, #7502e1 0%,#d026f2 29%,#35023b 66%,#d979ff 100%);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+	min-height: calc(100vh - 2rem);
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: space-evenly;
+	overflow: scroll;
+	position: relative; 
+}
+
+body::before, 
+body::after {
+	content: "";
+	width: 70vmax;
+	height: 70vmax;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.07);
+	left: -20vmin;
+	top: -20vmin;
+	animation: morph 15s linear infinite alternate, spin 20s linear infinite;
+	z-index: 1;
+	will-change: border-radius, transform;
+	transform-origin: 30% 30%;
+	pointer-events: none; 
+}
+	
+body::after {
+    width: 70vmin;
+    height: 70vmin;
+    left: auto;
+    right: -10vmin;
+    top: auto;
+    bottom: 0;
+    animation: morph 10s linear infinite alternate, spin 26s linear infinite reverse;
+    transform-origin: 10% 10%; 
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%
+	}
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%; }
+  100% {
+    border-radius: 40% 60%; } 
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn); 
+  } 
+}
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{opacity:0.29;}
+	.st3{fill:#FFFFFF;}
+	.st4{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+	.st5{clip-path:url(#SVGID_4_);}
+	.st6{clip-path:url(#SVGID_6_);}
+	.st7{clip-path:url(#SVGID_8_);}
+	.st8{clip-path:url(#SVGID_10_);}
+	.st9{fill:none;}
+	.st10{clip-path:url(#SVGID_12_);}
+	.st11{opacity:0.7;}
+	.st12{clip-path:url(#SVGID_14_);}
+	.st13{opacity:0.2;}
+	.st14{clip-path:url(#SVGID_16_);}
+	.st15{opacity:0.3;fill:#FFFFFF;enable-background:new    ;
+}
+
+.compromiso .contenido img {
+        float: left;
+        margin-right: 10px; /* Esto añade un pequeño margen a la derecha para separar la imagen del texto */
+}
+.compromiso .contenido .titulo img {
+        float: right;
+        margin-left: 10px;
+}
+.compromiso .contenido .titulo h2 {
+    color: #1762da;
+    font-size: 4em;
+    text-align: center;
+    align-content: center;
+}
+.compromiso .contenido .titulo p {
+    margin-top: 20px;
+    color:#feffab;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.servicios .contenido .titulo h1 {
+    color: #fca0a0;
+    font-size: 4em;
+    text-align: center;
+    align-content: center;
+}
+.servicios .contenido .titulo h2 {
+    color: #d0ecf5;
+    font-size: 2em;
+    text-align: left;
+    align-content: center;
+}
+.servicios .contenido .titulo p {
+    margin-top: 20px;
+    color:#feffab;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.servicios .contenido .titulo img {
+    display: block;
+    margin: 0 auto;
+}
+.FODA .contenido .fortalezas img {
+    float: left;
+    margin-right: 10px;
+    width: 550px;
+}
+.FODA .contenido .fortalezas h1 {
+    color: #d7fd01;
+    font-size: 4em;
+    text-align: center;
+    align-content: center;
+}
+.FODA .contenido .fortalezas h2 {
+    margin-top: 20px;
+    color: #53f707;
+    font-size: 3em;
+    text-align: center;
+    align-content: center;
+}
+.FODA .contenido .fortalezas h3 {
+    margin-top: 10px;
+    color: #d0ecf5;
+    font-size: 2em;
+    text-align: center;
+    align-content: center;
+}
+.FODA .contenido .fortalezas p {
+    margin-top: 20px;
+    color:#feffab;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.FODA .contenido .debilidades img {
+    float: right;
+    margin-right: 10px;
+    height: 400px;
+    width: 550px;
+}
+.FODA .contenido .debilidades h2 {
+    margin-top: 20px;
+    color: #fd912b;
+    font-size: 3em;
+    text-align: center;
+    align-content: center;
+}
+.FODA .contenido .debilidades h3 {
+    margin-top: 20px;
+    color: #d0ecf5;
+    font-size: 2em;
+    text-align: center;
+    align-content: center;
+}
+.FODA .contenido .debilidades p {
+    margin-top: 20px;
+    color:#feffab;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.FODA .contenido .oportunidades img {
+    float: left;
+    margin-right: 10px;
+    width: 670px;
+    height: 590px;
+}
+.FODA .contenido .oportunidades h2 {
+    margin-top: 20px;
+    color: #53f707;
+    font-size: 3em;
+    text-align: center;
+}
+.FODA .contenido .oportunidades h3 {
+    margin-top: 20px;
+    color: #d0ecf5;
+    font-size: 2em;
+    text-align: center;
+    align-content: center;
+}
+.FODA .contenido .oportunidades p {
+    margin-top: 20px;
+    color:#feffab;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.FODA .contenido .amenazas img {
+    float: right;
+    margin-right: 10px;
+    width: 500px;
+}
+.FODA .contenido .amenazas h2 {
+    margin-top: 20px;
+    color: #ff0000;
+    font-size: 3em;
+    text-align: center;
+    align-content: center;
+}
+.FODA .contenido .amenazas h3 {
+    margin-top: 20px;
+    color: #d0ecf5;
+    font-size: 2em;
+    text-align: center;
+    align-content: center;
+}
+.FODA .contenido .amenazas p {
+    margin-top: 20px;
+    color:#feffab;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.impositivo .contenido .titulo img {
+    display: block;
+    margin: 0 auto;
+}
+.impositivo .contenido .titulo h1 {
+    color: #ff008c;
+    font-size: 4em;
+    text-align: center;
+    align-content: center;
+}
+.impositivo .contenido .titulo h2 {
+    color: #d0ecf5;
+    font-size: 2em;
+    text-align: center;
+    align-content: center;
+}
+.impositivo .contenido .titulo p {
+    margin-top: 20px;
+    color:#feffab;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
